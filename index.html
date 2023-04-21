@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anisha ke farmaishe</title>
+    <title>Kch kaam kre</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/095f2e1213.js" crossorigin="anonymous"></script>
 </head>
@@ -12,14 +12,16 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="pics/logo.png" alt="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <img src="images/logo.jpg" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>
@@ -159,7 +161,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright © Ratnesh. Made because of Anisha ke taunts <i class="fa-solid fa-ghost"></i></p>
+            <p>Copyright © Ratnesh. Made because of career ka darr <i class="fa-solid fa-ghost"></i></p>
         </div>
     </div>
 
@@ -178,6 +180,22 @@
         document.getElementById(tabname).classList.add("active-tab")
 
     }
+</script>
+
+<script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+
+
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+            
+
+        }
 </script>
 
 
